@@ -45,6 +45,7 @@ public class Hangman {
 	public static void generateWord() {
 		counter = 0;
 		guessedWord = "";
+		guessedLetters = new ArrayList<Character>();
 		ArrayList<String> words = new ArrayList<>();
 		try {
 			Scanner scanner = new Scanner(new File("ord.txt"));
